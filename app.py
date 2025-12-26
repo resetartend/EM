@@ -70,7 +70,7 @@ if not os.path.exists(UPLOAD_FOLDER):
 # -----------------------
 # [1] 한국어 분석 로직 (Kiwi 적용)
 # -----------------------
-LINE_RE = re.compile(r"^\[(?P<name>.+?)\]\s+\[(?P<time>\d{1,2}:\d{2})\]\s+(?P<msg>.+)$")
+LINE_RE = re.compile(r"^\[(?P<name>.+?)\]\s+\[(?P<time>.*?)\]\s+(?P<msg>.+)$")
 SKIP_TOKENS = {"사진", "이모티콘", "동영상", "삭제된 메시지입니다.", "보이스톡 해요.", "파일"}
 
 def parse_kakao_txt(path: str):
