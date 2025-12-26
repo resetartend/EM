@@ -18,22 +18,18 @@
 
 ```
 KakaoPersona/
-├─ .gitignore
-├─ .env.example
-├─ requirements.txt
-├─ README.md
-├─ main.py
 │
-├─ src/
-│  ├─ __init__.py
-│  ├─ kakao_parser.py
-│  ├─ api_clients.py
-│  ├─ analyzer.py
-│  └─ report.py
+├── templates/               # 웹 페이지 화면 (HTML)
+│   ├── login.html           # 로그인 페이지
+│   ├── register.html        # 회원가입 페이지
+│   ├── upload.html          # 파일 업로드 화면
+│   └── result.html          # 분석 결과 대시보드
 │
-├─ data/
-│  └─ sample_chat.txt
-│
+├── app.py                   # ★ 메인 실행 파일 (Flask 서버 + AI 분석 로직)
+├── main.py                  # (구버전) 초기 CLI 테스트용 코드
+├── requirements.txt         # 프로젝트 의존성 라이브러리 목록
+├── .gitignore               # 깃 업로드 제외 설정
+└── README.md                # 프로젝트 설명서
 └─ out_report/
    ├─ summary.md
    ├─ report.json
