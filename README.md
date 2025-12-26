@@ -42,11 +42,7 @@ KakaoPersona/
 ├── requirements.txt         # 프로젝트 의존성 라이브러리 목록
 ├── .gitignore               # 깃 업로드 제외 설정
 └── README.md                # 프로젝트 설명서
-│
-└─ out_report/
-   ├─ summary.md
-   ├─ report.json
-   └─ utterances.csv
+
 ```
 
 ## 🔑 환경 변수 설정
