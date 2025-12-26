@@ -38,7 +38,6 @@ KakaoPersona/
 │   └── result.html          # 분석 결과 대시보드
 │
 ├── app.py                   # ★ 메인 실행 파일 (Flask 서버 + AI 분석 로직)
-├── main.py                  # (구버전) 초기 CLI 테스트용 코드
 ├── requirements.txt         # 프로젝트 의존성 라이브러리 목록
 ├── .gitignore               # 깃 업로드 제외 설정
 └── README.md                # 프로젝트 설명서
