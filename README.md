@@ -10,7 +10,7 @@
 - 무료 AI API로 감성 분석(긍/부정/중립), 독성 점수 계산
 - 어휘 다양성/자기지시어/확신·불확실 표현 등 스타일 지표 계산
 - 빅파이브(Big Five: OCEAN) 성격 특성 탐색적 추정
-- 결과를 **Markdown, JSON, CSV** 리포트로 저장
+- 결과는 **result.html** 에서 확인 가능
 
 ---
 
@@ -30,13 +30,12 @@ KakaoPersona/
 ├── requirements.txt         # 프로젝트 의존성 라이브러리 목록
 ├── .gitignore               # 깃 업로드 제외 설정
 └── README.md                # 프로젝트 설명서
+│
 └─ out_report/
    ├─ summary.md
    ├─ report.json
    └─ utterances.csv
 ```
-
----
 
 ## 🔑 환경 변수 설정
 
@@ -51,14 +50,6 @@ KakaoPersona/
 
 ---
 
-## ⚙️ 실행 방법
-# 기본 실행 (샘플 데이터)
-python main.py -f data/sample_chat.txt -o out_report
-
-# 실제 내보낸 카톡 파일 분석
-python main.py -f "C:/Users/내이름/Desktop/KakaoTalk_Chat.txt" -o out_results
-
----
 
 ## 📊 결과물
 - `out_report/summary.md` : 사람이 읽기 쉬운 요약 리포트  
